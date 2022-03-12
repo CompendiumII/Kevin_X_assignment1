@@ -11,29 +11,29 @@
     <title>Document</title>
 </head>
 <section class = "flexnote">
-<nav class = "sidenav">
-    <button class = "slide_in"
-                type = "button">
-                &lt;&lt;
-    </button>
-    <section class = my_notes>
-    <p>my notes</p>
-        <ul>
-            <li>
-                <button class = "in_notes"
+    <nav class = "sidenav">
+        <button class = "slide_in"
+                    type = "button">
+                    &lt;&lt;
+        </button>
+        <section class = my_notes>
+        <p>my notes</p>
+            <ul>
+                <li>
+                    <button class = "in_notes"
                             type = "button">
                             note one
-                </button>
-            </li>
-            <li>
-                <button class = "in_notes"
+                    </button>
+                </li>
+                <li>
+                    <button class = "in_notes"
                             type = "button">
                             note two
-            </button>
-            </li>
-        </ul>
-    </section>
-</nav>
+                </button>
+                </li>
+            </ul>
+        </section>
+    </nav>
 <main class = "note_main">
     <nav class = "top_bar">
         <h1 class = "generalHeader">
@@ -45,7 +45,27 @@
             </a>
         </h1>
     </nav>
-    <textarea rows="20" cols="85" placeholder="your note here"></textarea>
+    <div class = "textbox_area">
+        <button class = "new_note_button"
+                type = "button">
+            +
+        </button>
+        <div>
+        <section class = "textbox">
+        <textarea rows="15" cols="65" placeholder="your note here"></textarea>
+        </section>
+        <div class = "saveDelete">
+            <button class = "save" 
+                    type = "button">
+                save
+            </button>
+            <button class = "delete" 
+                    type = "button">
+                delete
+            </button>
+        </div>
+        </div>
+    </div>
 </main>
 </section>
 <footer>Created by Kevin X</footer>

@@ -5,6 +5,7 @@ Rose = #ebbcba
 Iris = #c4a7e7
 text = #e0def4
 muted = #6e6a86
+love = #eb6f92
 */
 
 
@@ -63,6 +64,8 @@ body{
 .sidenav {
     width: 15vw;
     top: 0px;
+    margin: 0px;
+    padding: 0px;
     background-color: #6e6a86;
     display: flex;
     flex-direction: column;
@@ -70,26 +73,66 @@ body{
 }
 
 textarea {
+    font-family: 'Quicksand', sans-serif; 
+    font-size: 18px;
     resize: none;
     border: none;
     outline: none;
+    background-color: #c4a7e7;
+    color: #191724;
 }
 
 .note_main{
     width: 85vw;
 }
+
+.new_note_button{
+    margin-bottom: 90%;
+    border: 0;
+    background-color: #191724;
+    font-size: 40px;
+}
+
+.new_note_button:hover{
+    color:#ebbcba;
+}
+
+.textbox_area{
+    margin: auto;
+    width: 50%;
+    padding-top: 10%;
+    display:flex;
+    flex-direction: row;
+}
+
 .flexnote {
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
 
+.save, .delete{
+    background-color: #191724;
+    border: 0;
+    font-size: 25px;
+}
+.delete{
+    color: #ebbcba;
+}
+
+.delete:hover{
+    color: #eb6f92;
+}
+
+.save:hover{
+    color:#6e6a86;
+}
+
 .slide_in {
     background-color: #6e6a86;
     font-size: 33px;
     border: 0;
-    position: relative;
-    float: right;
+    padding-left: 72%;
 }
 
 .slide_in:hover {
@@ -102,11 +145,17 @@ textarea {
     display: flex;
     flex-direction: column;
 }
+.my_notes p{
+    color:#191724;
+    font-size: 24px;
+}
 
 .in_notes {
     text-align: center;
     background-color: #6e6a86;
+    font-size: 20px;
     border: 0;
+    padding-top: 20px;
 }
 
 .in_notes:hover {
@@ -120,11 +169,24 @@ ul {
     padding: 0;
 }
 
+.saveDelete{
+    padding-left: 72%;
+}
+
 @media screen and (max-width: 600px) {
     .new_note{
         padding-left: 65px;
     }
     footer{
         bottom: 0px;
+    }
+    textarea{
+        width: 180px;
+    }
+    .saveDelete{
+        padding-left: 50%;
+    }
+    .slide_in{
+        padding-left: 15%;
     }
 }
