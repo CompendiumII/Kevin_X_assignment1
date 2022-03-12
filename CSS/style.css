@@ -61,7 +61,7 @@ body{
 }
 
 .sidenav {
-    width: 15%;
+    width: 15vw;
     top: 0px;
     background-color: #6e6a86;
     display: flex;
@@ -71,11 +71,17 @@ body{
 
 textarea {
     resize: none;
+    border: none;
+    outline: none;
 }
 
+.note_main{
+    width: 85vw;
+}
 .flexnote {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .slide_in {
@@ -87,7 +93,8 @@ textarea {
 }
 
 .slide_in:hover {
-    background-color: #ebbcba;
+    background-color: #6e6a86;
+    color: #ebbcba;
 }
 
 .my_notes {
@@ -96,6 +103,22 @@ textarea {
     flex-direction: column;
 }
 
+.in_notes {
+    text-align: center;
+    background-color: #6e6a86;
+    border: 0;
+}
+
+.in_notes:hover {
+    background-color: #6e6a86;
+    color: #ebbcba;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 @media screen and (max-width: 600px) {
     .new_note{
